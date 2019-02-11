@@ -19,10 +19,12 @@ $(window).on("scroll", function () {
     if (positionNav > 100) {
         //réduire height de la nav bar
         $(".nav-bar").css("height", "50px")
+        $(".nav-bar").css("opacity", 0.75);
     }
     else if (positionNav < 100) {
         //réduire height de la nav bar
         $(".nav-bar").css("height", "75px");
+        $(".nav-bar").css("opacity", 1);
     }
 
 })
