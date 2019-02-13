@@ -37,23 +37,13 @@ $(window).on("scroll", function () {
 /* SLIDER */
 
 var slideIndex = 0;
-
 var slides = $(".slides");
-console.log(slides);
-
-// if(slideIndex > slides.length){
-//     slideIndex = 0;
-// }
-
 showSlide(slideIndex);
-
 function showSlide(numberSlide) {
     let idSlide = slides[numberSlide].id;
     $(".slides").removeClass("active");
     $(`#${idSlide}`).addClass("active");
 }
-
-
 $(".arrow").on("click", function () {
     console.log("On click");
     //Si prev
